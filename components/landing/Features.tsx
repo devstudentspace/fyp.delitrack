@@ -55,7 +55,7 @@ export function Features() {
                 rotateY: 10,
                 transition: { duration: 0.3 }
               }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
               viewport={{ once: true }}
               style={{
                 transformStyle: "preserve-3d",

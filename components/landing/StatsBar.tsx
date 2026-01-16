@@ -36,18 +36,11 @@ export function StatsBar() {
     visible: {
       y: 0,
       opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeInOut",
-      },
     },
     hover: {
       y: -10,
       rotateX: 10,
       rotateY: 10,
-      transition: {
-        duration: 0.3,
-      },
     }
   };
 

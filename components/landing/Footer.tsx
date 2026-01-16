@@ -34,7 +34,7 @@ const socialLinks = [
 ];
 
 export function Footer({ className }: { className?: string }) {
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  const [currentYear, setCurrentYear] = useState<number | null>(null);
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear());
@@ -105,7 +105,7 @@ export function Footer({ className }: { className?: string }) {
 
         <div className="mt-8 sm:mt-12 pt-6 border-t border-foreground/20 flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground/80 text-xs sm:text-sm">
-            &copy; {currentYear} Lifterico. All rights reserved.
+            &copy; {currentYear ?? 2024} Lifterico. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-3 md:mt-0">
             {footerLinks.legal.map((link) => (

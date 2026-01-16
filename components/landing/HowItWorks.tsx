@@ -48,7 +48,7 @@ export function HowItWorks() {
                 rotateY: 10,
                 transition: { duration: 0.3 }
               }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true }}
               style={{
                 transformStyle: "preserve-3d",
